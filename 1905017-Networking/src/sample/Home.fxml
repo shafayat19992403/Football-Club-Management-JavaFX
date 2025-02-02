@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="1138.0" style="-fx-background-color: linear-gradient(to right bottom, #29373d, #2d454c, #30535a, #336266, #377171);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="663.0" prefWidth="278.0" style="-fx-background-color: #abb3c2; -fx-background-radius: 0;">
+         <children>
+            <ImageView fitHeight="93.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@jimmy-fallon.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="40.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label alignment="BOTTOM_LEFT" prefHeight="0.0" prefWidth="146.0" text="MD SHAFAYATUL HAUQE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="40.0" />
+               </VBox.margin>
+            </Label>
+            <Button alignment="TOP_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#SearchPlayerOnAction" prefHeight="37.0" prefWidth="228.0" style="-fx-background-color: #abb3c2;" text="Search Players">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-search-database-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ComboBox fx:id="SearchPlayerComboBox" prefWidth="150.0" promptText="None Selected" style="-fx-background-color: #abb3c2; -fx-border-color: black; -fx-border-radius: 20;">
+               <VBox.margin>
+                  <Insets bottom="40.0" />
+               </VBox.margin>
+            </ComboBox>
+            <Button alignment="TOP_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="228.0" style="-fx-background-color: #abb3c2;" text="Search Clubs">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-people-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="50.0" top="10.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ComboBox fx:id="SearchClubComboBox" prefWidth="150.0" promptText="None Selected" style="-fx-background-color: #abb3c2; -fx-border-color: black; -fx-border-radius: 20;">
+               <VBox.margin>
+                  <Insets bottom="40.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <Button alignment="TOP_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#AddPlayerOnAction" prefHeight="64.0" prefWidth="400.0" style="-fx-background-color: #abb3c2; -fx-background-radius: 10;" text="Add Player">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-add-administrator-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button alignment="TOP_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#MarketOnAction" prefHeight="64.0" prefWidth="400.0" style="-fx-background-color: #abb3c2;" text="Market">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-sign-out-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button alignment="TOP_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="64.0" prefWidth="400.0" style="-fx-background-color: #abb3c2;" text="Exit System">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-exit-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="336.0" layoutY="30.0" text="Player Database System" textFill="#ffe5e5">
+         <font>
+            <Font name="Dubai Regular" size="36.0" />
+         </font>
+      </Label>
+      <HBox fx:id="UpperHBox" layoutX="329.0" layoutY="132.0" prefHeight="114.0" prefWidth="782.0" style="-fx-background-color: #7A9090; -fx-background-radius: 20; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 20; -fx-border-style: dashed; -fx-box-shadow: 20;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="114.0" prefWidth="117.0">
+               <children>
+                  <Label alignment="CENTER" text="1905017" textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="BOTTOM_LEFT" text="Student ID">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="70.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="ClubCount" alignment="CENTER" text="10" textFill="#4000ff">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label text="Total Clubs">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="70.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="PlayerCount" alignment="CENTER" text="35" textFill="#00ff66">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label text="Total Players">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="70.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="CountryCount" alignment="CENTER" text="8" textFill="#f2049f">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label text="Total Countries">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="70.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="330.0" layoutY="259.0" prefHeight="64.0" prefWidth="782.0" style="-fx-background-color: #8F989A; -fx-background-radius: 20; -fx-border-color: black; -fx-border-radius: 20; -fx-border-width: 2;">
+         <children>
+            <Label text="Player Name">
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label text="Country">
+               <HBox.margin>
+                  <Insets left="70.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label text="Club">
+               <HBox.margin>
+                  <Insets left="70.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label text="Sell Button">
+               <HBox.margin>
+                  <Insets left="70.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label text="Details Button">
+               <HBox.margin>
+                  <Insets left="70.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <ScrollPane layoutX="333.0" layoutY="332.0" prefHeight="331.0" prefWidth="776.0" style="-fx-background-radius: 20; -fx-border-color: #5e6061; -fx-border-width: 0;">
+         <content>
+            <VBox fx:id="itemVbox" prefHeight="330.0" prefWidth="779.0" spacing="5.0" style="-fx-background-color: #C0C3C4;" />
+         </content>
+      </ScrollPane>
+      <ImageView fitHeight="28.0" fitWidth="31.0" layoutX="1057.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8_Search_52px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
